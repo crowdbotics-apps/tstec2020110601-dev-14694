@@ -1,17 +1,13 @@
 import React from 'react';
-
-import {createStackNavigator} from '@react-navigation/stack';
-
 import SignUp from './screens/index';
+import { createStackNavigator } from 'react-navigation-stack';
 
-const emailAuthStack = createStackNavigator();
+const defaultStackSettings = {
+  defaultNavigationOptions: ({ navigation }) => ({ header: null }),
+}
 
-const EmailAuthStackScreen = props => (
-  <emailAuthStack.Navigator
-    screenOptions={{headerShown: false}}
-    initialRouteName={props.initialRoute}>
-    <emailAuthStack.Screen name="SignUp" component={SignUp} />
-  </emailAuthStack.Navigator>
-);
-
-export default EmailAuthStackScreen;
+export default EmailAuthStackScreen = createStackNavigator({
+  SignUp,
+},
+  defaultStackSettings
+)
