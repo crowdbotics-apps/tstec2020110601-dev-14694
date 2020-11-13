@@ -14,7 +14,7 @@ export default {
     color: Color.white,
     marginHorizontal: 40,
     marginVertical: 12,
-    fontFamily: 'OpenSans-Regular',
+    //fontFamily: 'OpenSans-Regular',
     //fontWeight: '800',
   },
 };
