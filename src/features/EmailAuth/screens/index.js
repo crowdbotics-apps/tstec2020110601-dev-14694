@@ -74,13 +74,13 @@ const EmailAuth = props => {
                   activeTextStyle={{
                     color: Color.black,
                     fontSize: 20,
-                    fontFamily: 'OpenSans-Regular',
+                    //fontFamily: 'OpenSans-Regular',
                   }}
                   tabStyle={{backgroundColor: Color.white}}
                   textStyle={{
                     color: Color.steel,
                     fontSize: 20,
-                    fontFamily: 'OpenSans-Regular',
+                   //fontFamily: 'OpenSans-Regular',
                   }}>
                   <Login />
                 </Tab>
@@ -90,13 +90,13 @@ const EmailAuth = props => {
                   activeTextStyle={{
                     color: Color.black,
                     fontSize: 20,
-                    fontFamily: 'OpenSans-Regular',
+                    //fontFamily: 'OpenSans-Regular',
                   }}
                   tabStyle={{backgroundColor: Color.white}}
                   textStyle={{
                     color: Color.steel,
                     fontSize: 20,
-                    fontFamily: 'OpenSans-Regular',
+                    //fontFamily: 'OpenSans-Regular',
                   }}>
                   <Signup />
                 </Tab>
