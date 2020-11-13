@@ -9,7 +9,7 @@ const TextStyle = props => {
           {
             fontSize: 16,
             color: '#000',
-            fontFamily: 'OpenSans-Regular',
+            //fontFamily: 'OpenSans-Regular',
           },
           props.extraTextStyle,
         ]}>
