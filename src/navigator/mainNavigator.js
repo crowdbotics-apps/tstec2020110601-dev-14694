@@ -10,25 +10,34 @@ import EmailAuthNavigator from "../features/EmailAuth/navigator";
 /**
  * new navigators can be imported here
  */
+
+// Add this to make your authentication manditory before displaying the rest of the application
+const DrawerScreens={
+ // to make non-manditory uncomment this 
+ //EmailAuthNavigator,
+
+}
 const switchScreens = {
-  EmailAuthNavigator,
-  DrawerAppNavigator,
-  SplashScreen: {
-    screen: SplashScreen
-  }
+  // comment this to make it non-manditory
+  EmailAuthNavigator, 
+  DrawerAppNavigator
 };
 const switchSettings = {
   // initialRouteName: 'TestScreen',
   //backBehavior:'initialRoute'
 };
+// end auth updates
+
 const DrawerAppNavigator = createDrawerNavigator(
   {
-    ...AppNavigator,
+    ...DrawerScreens,
   },
   {
     contentComponent: SideMenu
   },
 );
-const AppNavigator = createSwitchNavigator(switchScreens, switchSettings);
-const AppContainer = createAppContainer(AppNavigator);
+// auth updates to be included
+const SwitchNavigator = createSwitchNavigator(switchScreens, switchSettings);
+// end updates
+const AppContainer = createAppContainer(SwitchNavigator);
 export default AppContainer;
